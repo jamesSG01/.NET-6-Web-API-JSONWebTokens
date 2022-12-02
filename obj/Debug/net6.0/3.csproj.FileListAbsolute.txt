@@ -1,0 +1,8 @@
+D:\learning.NET\3\obj\Debug\net6.0\3.csproj.AssemblyReference.cache
+D:\learning.NET\3\obj\Debug\net6.0\3.GeneratedMSBuildEditorConfig.editorconfig
+D:\learning.NET\3\obj\Debug\net6.0\3.AssemblyInfoInputs.cache
+D:\learning.NET\3\obj\Debug\net6.0\3.AssemblyInfo.cs
+D:\learning.NET\3\obj\Debug\net6.0\3.csproj.CoreCompileInputs.cache
+D:\learning.NET\3\obj\Debug\net6.0\3.MvcApplicationPartsAssemblyInfo.cache
+D:\learning.NET\3\obj\Debug\net6.0\3.RazorAssemblyInfo.cache
+D:\learning.NET\3\obj\Debug\net6.0\3.RazorAssemblyInfo.cs
