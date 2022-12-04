@@ -38,7 +38,8 @@ namespace Auth.Controllers
             if (!VerifyPasswordHash(request.Password, user.PasswordHash, user.PasswordSalt)){
                 return BadRequest("Wrong Password !");
             }
-            return Ok("Welcom " + request.Username);
+            string token = CreateToken(user);
+            return Ok("Token: " + token);
         }
         private string CreateToken(User user) {
             List<Claim> claims = new List<Claim> 
@@ -55,8 +56,8 @@ namespace Auth.Controllers
                 expires: DateTime.Now.AddDays(1),
                 signingCredentials: creds
                 );
-    
-            return string.Empty;
+            var jwt = new JwtSecurityTokenHandler().WriteToken(token);
+            return jwt;
         }
         private void CreatePasswordHash (string password, out byte[] passwordHash, out byte[] passwordSalt ){
             using (var hmac = new HMACSHA512()) {
